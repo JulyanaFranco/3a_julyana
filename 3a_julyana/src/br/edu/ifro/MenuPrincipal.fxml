@@ -7,20 +7,31 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="203.0" prefWidth="362.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="228.0" prefWidth="368.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
     <children>
         <Label fx:id="label" layoutX="108.0" layoutY="120.0" minHeight="16" minWidth="69" />
-      <TextField fx:id="txtNumero1" layoutX="34.0" layoutY="43.0" />
-      <TextField fx:id="txtNumero2" layoutX="42.0" layoutY="88.0" />
-      <TextField fx:id="txtResultado" editable="false" layoutX="34.0" layoutY="160.0" />
-      <Label fx:id="lblNumero1" layoutX="14.0" layoutY="23.0" text="Número 1:" />
-      <Label fx:id="lblNumero2" layoutX="14.0" layoutY="69.0" text="Número 2:" />
-      <Label fx:id="lblResultado" layoutX="14.0" layoutY="129.0" text="Resultado:" />
-      <Button fx:id="btnSoma" layoutX="224.0" layoutY="28.0" mnemonicParsing="false" onAction="#soma" text="Soma" />
-      <Button fx:id="btnSubtração" layoutX="227.0" layoutY="88.0" mnemonicParsing="false" onAction="#subtracao" text="Subtração" />
-      <Button fx:id="btnMultiplicação" layoutX="227.0" layoutY="117.0" mnemonicParsing="false" onAction="#multiplicacao" text="Multiplicação" />
-      <Button fx:id="btnDivisão" layoutX="227.0" layoutY="56.0" mnemonicParsing="false" onAction="#divisao" text="Divisão" />
-      <Button fx:id="btnFechar" layoutX="297.0" layoutY="160.0" mnemonicParsing="false" onAction="#fechar" text="Fechar" />
-      <Button fx:id="btnLimpar" layoutX="209.0" layoutY="160.0" mnemonicParsing="false" onAction="#limpar" text="Limpar" />
+      <TextField fx:id="txtNumero1" layoutX="42.0" layoutY="76.0" />
+      <TextField fx:id="txtNumero2" layoutX="42.0" layoutY="137.0" />
+      <TextField fx:id="txtResultado" editable="false" layoutX="34.0" layoutY="185.0" />
+      <Label fx:id="lblNumero1" layoutX="14.0" layoutY="53.0" text="Número 1:" />
+      <Label fx:id="lblNumero2" layoutX="14.0" layoutY="113.0" text="Número 2:" />
+      <Label fx:id="lblResultado" layoutX="14.0" layoutY="168.0" text="Resultado:" />
+      <Button fx:id="btnSoma" layoutX="226.0" layoutY="41.0" mnemonicParsing="false" onAction="#soma" text="Soma" />
+      <Button fx:id="btnSubtração" layoutX="225.0" layoutY="109.0" mnemonicParsing="false" onAction="#subtracao" text="Subtração" />
+      <Button fx:id="btnMultiplicação" layoutX="228.0" layoutY="137.0" mnemonicParsing="false" onAction="#multiplicacao" text="Multiplicação" />
+      <Button fx:id="btnDivisão" layoutX="221.0" layoutY="76.0" mnemonicParsing="false" onAction="#divisao" text="Divisão" />
+      <Button fx:id="btnFechar" layoutX="297.0" layoutY="198.0" mnemonicParsing="false" onAction="#fechar" text="Fechar" />
+      <Button fx:id="btnLimpar" layoutX="221.0" layoutY="198.0" mnemonicParsing="false" onAction="#limpar" text="Limpar" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="368.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirCadastroAlunos" text="Alunos" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#FecharProjeto" text="Fechar" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
     </children>
 </AnchorPane>
